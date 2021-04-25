@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute Page</title>
+  </head>
+
+  <body style="background-color: #fbefdf">
+    <header>
+      <nav style="background-color: #27282d">
+        <ul>
+          <li style="font-size: 30px; padding: 15px">
+            <a
+              href="#"
+              style="color: #8d6852; text-decoration: none; padding-left: 5%"
+              >Homepage</a
+            >
+
+            <a
+              href="./adoptcoffee.html"
+              style="color: #fbefdf; text-decoration: none; padding-left: 5%"
+              >Adopt a coffea shrub</a
+            >
+
+            <a
+              href="./recipes.html"
+              style="color: #fbefdf; text-decoration: none; padding-left: 5%"
+              >Recipes</a
+            >
+            <a
+              href="#footer"
+              style="color: #fbefdf; text-decoration: none; padding-left: 15%"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--// nav bar-->
+
+    <main>
+      <section>
+        <h1
+          style="
+            font-size: 500%;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #27282d;
+          "
+        >
+          C<img
+            src="./img/bean.png"
+            alt="Bean"
+            style="float: none; width: 45px"
+          />ffee
+        </h1>
+
+        <h2
+          style="
+            font-size: 200%;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #462e25;
+          "
+        >
+          “Coffee is the nectar of the gods(..)”
+        </h2>
+        <h3 style="text-align: center; color: #8d6852">
+          <i>Nathan Wolf, Liberty Mountain: No Man's Land</i>
+        </h3>
+        <hr />
+        <br />
+        <p><b>Wikipedia on coffee:</b></p>
+        <blockquote cite="https://en.wikipedia.org/wiki/Coffee">
+          Coffee is darkly colored, bitter, slightly acidic and has a
+          stimulating effect in humans, primarily due to its caffeine
+          content.[2] It is one of the most popular drinks in the world,[3] and
+          can be prepared and presented in a variety of ways (e.g., espresso,
+          French press, caffè latte, or already-brewed canned coffee). It is
+          usually served hot, although chilled or iced coffee is common. Sugar,
+          sugar substitutes, milk or cream are often used to lessen the bitter
+          taste.
+        </blockquote>
+
+        <!--// header and info texts-->
+
+        <h3 style="text-align: center">
+          If you want to find out more about coffee's history or how it is
+          produced today,
+          <i
+            ><ins
+              >click the cup of coffee or beans in the picture bellow.</ins
+            ></i
+          >
+        </h3>
+        <p style="text-align: center">
+          <img
+            src="./img/Coffee.jpg"
+            style="width: 900px"
+            alt="CoffeeMap"
+            usemap="#coffeemap"
+          />
+        </p>
+
+        <map name="coffeemap">
+          <area
+            shape="circle"
+            coords="213, 364, 53"
+            alt="CoffeeBeans"
+            href="https://www.homegrounds.co/how-is-coffee-made/"
+            target="_blank"
+          />
+          <area
+            shape="circle"
+            coords="701, 305, 70"
+            alt="Coffee"
+            href="https://www.ncausa.org/about-coffee/history-of-coffee"
+            target="_blank"
+          />
+        </map>
+
+        <!--// map on image-->
+      </section>
+    </main>
+
+    <footer style="background-color: #27282d; color: #fbefdf" id="footer">
+      <h2 style="color: #8d6852">Contact us</h2>
+      <dl style="color: #fbefdf">
+        <dt>
+          If you would like to contact us, please choose one of the options
+          bellow:
+        </dt>
+        <br />
+
+        <dd>
+          <b>Email: </b
+          ><a href="#" style="color: #fbefdf; text-decoration: none"
+            >coffee@coffee.com</a
+          >
+        </dd>
+        <br />
+
+        <dd>
+          <b>Address:</b> Most magical place on earth<br />Where the coffee
+          beans live.
+        </dd>
+      </dl>
+      <br />
+      <h3>Contact form</h3>
+      <form action="./thankyou.html" target="_blank">
+        <label for="firstName"></label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="First name"
+          required
+        />
+        <label for="lastName"></label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Last Name"
+          required
+        /><br /><br />
+        <label for="question"></label>
+        <textarea
+          rows="4"
+          cols="48"
+          name="question"
+          placeholder="Write your question here..."
+          required
+        ></textarea
+        ><br /><br />
+        <input type="submit" value="submit" /><br />
+      </form>
+    </footer>
+    <!--// end of footer-->
+  </body>
+</html>
